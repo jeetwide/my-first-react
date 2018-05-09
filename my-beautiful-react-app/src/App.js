@@ -8,7 +8,7 @@ class MyMovie extends Component {
         super(props);
 
         this.state = {
-            header: "Header from initial state...yes",
+            header: "Header from initial state..",
             content: "Content from state...(here style applied)",
             name: ['jitu\n', 'achtani\n'],
             height: 6
