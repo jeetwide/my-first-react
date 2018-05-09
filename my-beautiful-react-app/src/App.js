@@ -28,7 +28,9 @@ class MyMovie extends Component {
         var name = this.state.name;
         name =name.map(function (item,index) {
             return(
-                <li>{item}</li>
+             <li>{item}</li>
+
+
             );
         });
 
@@ -43,22 +45,23 @@ class MyMovie extends Component {
 
                 <hr/>
                 <h1> array Values fetched vertically from States </h1>
-               {/* <p> Name:{this.state.name[0]}</p>
-                <p> Name:{this.state.name[1]}</p>*/}
+
                 <ul>
                     {name}
                 </ul>
                 <hr/>
-                <SecondComponent/>
+                <SecondComponent name ="jack" />
                 <hr/>
 
-                <button onClick={this.clicked}>Handle Click</button>
+                <button onClick={this.clicked}>Execute Function on click</button>
                 <button onClick={this.changingStates}>Change State</button>
                 <button onClick={this.changingHeight}>Change Height After 3 seconds</button>
                 <h4>Header: {this.state.header}</h4>
                 <h4>Name Array vertically</h4>
                 <ul>
                     {name}
+
+
                 </ul>
                 <h4>Height:{this.state.height}</h4>
                 <hr/>
@@ -138,11 +141,13 @@ class SecondComponent extends Component {
 
     render() {
         return (<div>
-                <h1> THis is from Second Component</h1>
+                <h1> THis is from Second Component </h1>
+                <p> Name(props) is {this.props.name}</p>
             </div>
         );
     }
 
 }
+
 
 export default MyMovie;
