@@ -8,7 +8,7 @@ import registerServiceWorker from './registerServiceWorker';
 
 
 ReactDOM.render(<div><MyMovie title="avatar" genre="action"/>
-<MyMovie title="Titanic" genre="Roamance"/>
+<MyMovie title="Titaniccc" genre="Roamance"/>
 <MyMovie title="Mohra" genre="Action"/>
 <MyMovie title="Hangover" genre="Drama"/>
 <MyMovie title="OnceMOre" genre="Drama"/>
