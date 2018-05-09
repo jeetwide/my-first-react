@@ -31,6 +31,8 @@ class MyMovie extends Component {
              <li>{item}</li>
 
 
+
+
             );
         });
 
@@ -148,6 +150,21 @@ class SecondComponent extends Component {
     }
 
 }
+
+/*class NameItem extends Component {
+
+
+    render() {
+        return (<li>
+                <div className="name-item">
+                    <span>{this.props.item}</span>
+                </div>
+
+            </li>
+        );
+    }
+
+}*/
 
 
 export default MyMovie;
